@@ -13,19 +13,19 @@
     <link rel="canonical" href="http://www.gdg-dus.de">
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@DevFest">
-    <meta name="twitter:title" content="GDG DevFest Season 2014">
+    <meta name="twitter:site" content="@OSWeekends">
+    <meta name="twitter:title" content="Open Communities Summit">
     <meta name="twitter:description" content="GDG DevFest is a set of events all around the world">
     <meta name="twitter:image:src" content="http://www.gdg-dus.deimg/seo/sharing-twitter.png">
     <!-- Social: Facebook / Open Graph -->
-    <meta property="og:title" content="GDG DevFest Season 2014" /> 
-    <meta property="og:site_name" content="GDG DevFest Season 2014" /> 
+    <meta property="og:title" content="Open Communities Summit" /> 
+    <meta property="og:site_name" content="Open Communities Summit" /> 
     <meta property="og:type" content="website" /> 
     <meta property="og:url" content="http://www.gdg-dus.de" />
     <meta property="og:image" content="http://www.gdg-dus.deimg/seo/sharing-facebook.png" />
     <meta property="og:description" content="GDG DevFest is a set of events all around the world" /> 
     
-    <title>GDG DevFest Season 2014</title>
+    <title>Open Communities Summit 2017</title>
     <link rel="shortcut icon" href="img/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
@@ -493,14 +493,14 @@ See you in Düsseldorf!
                 eventPlaceCoordinates = '51.209559,6.780611',
                 centerMapCoordinates = '51.209559,6.780611',
                 mobileCenterMapCoordinates = '51.209559,6.780611',
-                icon = 'http://www.gdg-dus.deimg/other/map-marker.png';
+                icon = 'img/other/map-marker.png';
             }
             var twitterFeedUrl = '';
             $(document).ready(function () {
                 $(function () {
                     if ($(window).width() > 767) {
                         $("#typeout-text").typed({
-                            strings: ["", "Season", "USA", "Germany", "Düsseldorf"],
+                            strings: ["", "Summit", "Rocks", "Madrid", "Conference"],
                             typeSpeed: 150,
                             backDelay: 900,
                             loop: true
@@ -508,49 +508,56 @@ See you in Düsseldorf!
                     }
                 });
                 var rockstarSpeakers = [
-                    
-                        
-                        {name: "Dittmar Steiner", company: "Aptly GmbH", image: "img/people/DittmarSteiner.jpg"},
-                        
-                    
-                        
-                        {name: "Wolfram Rittmeyer", company: "", image: "img/people/WolframRittmeyer.jpg"},
-                        
-                    
-                        
-                        {name: "Pascal Welsch", company: "grandcentrix GmbH", image: "img/people/PascalWelsch.jpg"},
-                        
-                    
-                        
-                        {name: "Frederik Schweiger", company: "", image: "img/people/FrederikSchweiger.jpg"},
-                        
-                    
-                        
-                        {name: "Georg Zweschper", company: "", image: "img/people/GeorgZweschper.jpg"},
-                        
-                    
-                        
-                        {name: "Dennis Priess", company: "grandcentrix GmbH", image: "img/people/DennisPriess.jpg"},
-                        
-                    
-                        
-                        {name: "Brian Louis Ramirez", company: "grandcentrix GmbH", image: "img/people/BrianRamirez.jpg"},
-                        
-                    
-                        
-                        {name: "Nabil Ben Said", company: "", image: "img/people/NabilBenSaid.jpg"},
-                        
-                    
-                        
-                    
-                        
-                        {name: "Maxim Mai", company: "Google", image: "img/people/MaximMai.jpg"},
-                        
-                    
-                        
-                        {name: "Nenad Natošević", company: "", image: "img/people/NenadNatosevic.jpg"}
-                        
-                    
+                        {
+                            name: "Dittmar Steiner", 
+                            company: "Aptly GmbH", 
+                            image: "img/people/DittmarSteiner.jpg"
+                        },
+                        {
+                            name: "Wolfram Rittmeyer", 
+                            company: "", 
+                            image: "img/people/WolframRittmeyer.jpg"
+                        },
+                        {
+                            name: "Pascal Welsch", 
+                            company: "grandcentrix GmbH", 
+                            image: "img/people/PascalWelsch.jpg"
+                        },
+                        {
+                            name: "Frederik Schweiger", 
+                            company: "", 
+                            image: "img/people/FrederikSchweiger.jpg"
+                        },
+                        {
+                            name: "Georg Zweschper", 
+                            company: "", 
+                            image: "img/people/GeorgZweschper.jpg"
+                        },
+                        {
+                            name: "Dennis Priess", 
+                            company: "grandcentrix GmbH", 
+                            image: "img/people/DennisPriess.jpg"
+                        },
+                        {
+                            name: "Brian Louis Ramirez", 
+                            company: "grandcentrix GmbH", 
+                            image: "img/people/BrianRamirez.jpg"
+                        },
+                        {
+                            name: "Nabil Ben Said", 
+                            company: "", 
+                            image: "img/people/NabilBenSaid.jpg"
+                        },
+                        {
+                            name: "Maxim Mai", 
+                            company: "Google", 
+                            image: "img/people/MaximMai.jpg"
+                        },
+                        {
+                            name: "Nenad Natošević", 
+                            company: "", 
+                            image: "img/people/NenadNatosevic.jpg"
+                        }
                 ];
                 rockstarSpeakers.sort(function() {return 0.5 - Math.random()});
                 if(rockstarSpeakers.length > 0) {
@@ -562,7 +569,7 @@ See you in Düsseldorf!
                         if ((i)%2 != 0) {
                             clearfix = ""
                         }
-                        $('#rockstar-speaker-title').after('<div class="col-md-'+ colWidth +' col-xs-6 rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay +'"><div class="rockstar-speaker"><div class="flow-img img-circle rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].company + '</div></div></div>' + clearfix);
+                        $('#rockstar-speaker-title').after('<div class="col-md-'+ colWidth +' col-xs-12 rockstar-speakers-item animated hiding" data-animation="fadeInUp" data-delay="' + animationDelay +'"><div class="rockstar-speaker"><div class="flow-img img-circle rockstar-speaker-img" style="background-image: url(' + rockstarSpeakers[i].image + ')"></div><div class="name">' + rockstarSpeakers[i].name + '</div><div class="sub">' + rockstarSpeakers[i].company + '</div></div></div>' + clearfix);
                         animationDelay -= 500;
                     }
                 }
